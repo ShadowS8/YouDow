@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if ls /data/data/com.termux/files/usr/bin/figlet
+then
+    echo "<<< Encontrado >>>"
+    figlet YouDow
+   cd Modulos && python Instalador.py
+elif pkg install figlet
+then
+	echo "Instalador Com Sucesso"
+	figlet YouDow
+	pkg install python -y
+	cd Modulos && python Instalador.py
+else
+	echo "Nao Achado"
+fi
