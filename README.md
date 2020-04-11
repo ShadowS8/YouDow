@@ -9,4 +9,4 @@
 
 ##### Inicia A Ferramenta
 
-*python YouDow.py ou python3 YouDow.py
+* python YouDow.py ou python3 YouDow.py
