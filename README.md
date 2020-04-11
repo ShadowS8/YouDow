@@ -4,5 +4,5 @@
 
 ##### Como Inicia A Ferramenta 
 
-* chmod 777 YOUDOW
-* ./Youdow
+* chmod 777 YouDow
+* ./YouDow
