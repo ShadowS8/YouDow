@@ -6,3 +6,7 @@
 
 * chmod 777 YouDow
 * ./YouDow
+
+##### Inicia A Ferramenta
+
+*python YouDow.py ou python3 YouDow.py
