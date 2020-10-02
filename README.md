@@ -1,8 +1,7 @@
 <div align="center">
-  <img height="200" src="https://i.imgur.com/iHE9q5O.png">
+  <img height="200" src="https://i.imgur.com/FRzBslH.png">
+  <p>Ferramenta para baixa música e vídeo diretamente do terminal</p>
 </div>
-
-### Ferramenta para baixa música e vídeo diretamente do terminal
 
 ##### Como Inicia A Ferramenta 
 
