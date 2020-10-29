@@ -1,51 +1,60 @@
 import random
 from time import sleep
-import os, glob
+import os
+import glob
+from colorama import Fore
+from colorama import Style
+
+
 def menu():
-        print("""		<===============================>
+    print("""		<===============================>
 	                   [1] Videos
 	                   [2] Musica
 	                   [3] PlayList
-	                   [4] Lista Tudo
+	                   [4] Listar Tudo
 	                   [5] Sair
                 <===============================>
         """)
+
+
 def loop():
     loop = 0
     while loop != 4:
         os.system("clear")
-        print("Iniciando", end="")
-        print(".")
-        sleep (0.3)
+        print(f"{Fore.BLUE}Iniciando{Style.RESET_ALL} ", end="")
+        print(f"{Fore.BLUE}.{Style.RESET_ALL}")        
+        sleep(0.3)
         os.system("clear")
-        print("Iniciando", end="")
-        print("..")
-        sleep (0.3)
+        print(f"{Fore.BLUE}Iniciando{Style.RESET_ALL} ", end="")
+        print(f"{Fore.BLUE}..{Style.RESET_ALL}")        
+        sleep(0.3)
         os.system("clear")
-        print("Iniciando", end="")
-        print("...")
-        sleep (0.3)
+        print(f"{Fore.BLUE}Iniciando{Style.RESET_ALL} ", end="")
+        print(f"{Fore.BLUE}...{Style.RESET_ALL}")
+        sleep(0.3)
         os.system("clear")
         loop = loop + 1
+
 
 def baixa():
     baixa = 0
     while baixa != 5:
         os.system("clear")
-        print("Iniciando Downloads", end="")
-        print(".")
-        sleep (0.3)
+        print(f"{Fore.RED}Iniciando Downloads{Style.RESET_ALL}", end="")
+        print(f"{Fore.RED}.{Style.RESET_ALL}")
+        sleep(0.3)
         os.system("clear")
-        print("Iniciando Downloads", end="")
-        print("..")
-        sleep (0.3)
+        print(f"{Fore.RED}Iniciando Downloads{Style.RESET_ALL}", end="")
+        print(f"{Fore.RED}..{Style.RESET_ALL}")
+        sleep(0.3)
         os.system("clear")
-        print("Iniciando Downloads", end="")
-        print("...")
-        sleep (0.3)
+        print(f"{Fore.RED}Iniciando Downloads{Style.RESET_ALL}", end="")
+        print(f"{Fore.RED}...{Style.RESET_ALL}")
+        sleep(0.3)
         os.system("clear")
-        print("Aguardem...")
         baixa = baixa + 1
+
+
 def listaM():
     os.chdir("/data/data/com.termux/files/home/storage/shared/Music")
     a = glob.glob("*.mp3")
@@ -59,6 +68,8 @@ def listaM():
     for ar2 in b:
         print(ar2)
     print("===========================================================")
+
+
 def listaV():
     os.chdir("/data/data/com.termux/files/home/storage/shared/Movies")
     c = glob.glob("*.mkv")
@@ -70,16 +81,27 @@ def listaV():
     for ar4 in d:
         print(ar4)
     print("===========================================================")
+
+
 def logo1():
     os.system("figlet -c YouDow")
+
+
 def logo2():
     os.system("figlet -c -f banner YouDow")
+
+
 def logo3():
     os.system("figlet -c -f slant YouDow")
+
+
 def logo4():
     os.system("figlet -c -f small YouDow")
+
+
 def logo5():
     os.system("figlet -c -f smslant YouDow")
+
 
 lo1 = logo1
 lo2 = logo2
