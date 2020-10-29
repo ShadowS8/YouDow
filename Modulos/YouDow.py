@@ -10,6 +10,7 @@ while url != 5:
     Menu.menu()
     try:
         url = input("OPÇÃO: ")
+        url = url.strip()
         if url == "1":
             url1 = input("URL: ")
             Menu.baixa()
